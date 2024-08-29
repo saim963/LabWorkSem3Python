@@ -1,9 +1,8 @@
-input_string = input("Enter 20 numbers separated by 'space': ")
-numbers = input_string.split()
-numbers = [int(num) for num in numbers]
-print(numbers)
+list = []
+list2 = []
+for _ in range(0,20):
+    temp = int(input("Enter numbers: "))
+    if temp%5 == 0:
+        list.append(temp)
 
-print("Numbers divisible by 5: ")
-for num in numbers:
-    if num%5 == 0:
-        print(num)
+print(list)
