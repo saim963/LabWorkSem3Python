@@ -3,7 +3,7 @@ def foo():
     num = input('Enter a 4 digit number: ')
     if len(num) !=4 :
         print('Try Again:')
-        foo()
+        return foo()
         
     start = int(num[:2])
     end = int(num[2:])
